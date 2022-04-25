@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: 聂一方
+ * @Date: 2022-04-23 16:56:26
+ * @LastEditors: 聂一方
+ * @LastEditTime: 2022-04-23 23:36:51
+ */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'

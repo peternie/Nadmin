@@ -4,13 +4,14 @@
  * @Author: 聂一方
  * @Date: 2022-04-23 16:56:26
  * @LastEditors: 聂一方
- * @LastEditTime: 2022-04-23 17:25:18
+ * @LastEditTime: 2022-04-23 23:44:51
 -->
 <script setup lang="ts">
-
+   
 </script>
 
 <template>
+<h1>12312</h1>
   <router-view></router-view>
 </template>
 

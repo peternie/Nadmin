@@ -5,7 +5,7 @@ import { App } from 'vue';
  * @Author: 聂一方
  * @Date: 2022-04-23 17:54:57
  * @LastEditors: 聂一方
- * @LastEditTime: 2022-04-23 18:05:40
+ * @LastEditTime: 2022-04-23 21:17:55
  */
 import { createPinia,defineStore } from "pinia";
 
@@ -19,6 +19,12 @@ export const userStore = defineStore('main',{
          count:0,
          name:""
       }
+    },
+    getters:{
+      dobuleCount:(state)=>{return state.count*2}
+    },
+    actions:{
+      
     }
 })
 export const setupStore = (app :App)=>{

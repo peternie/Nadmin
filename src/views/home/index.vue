@@ -7,9 +7,9 @@
  * @LastEditTime: 2022-04-25 11:38:45
 -->
 <template>
-<div class='container'>
-<h1 class="text_1"></h1>
-<h2>nie</h2>
+<div class='w-ful h-full'>
+<h1 class="absolute left-48px">hah</h1>
+<h2 class="bg-slate-500 hover:bg-red-400 transition-all">nie</h2>
 <h2>{{store.dobuleCount}}</h2>
 
 <!-- <button @click="store.$reset()">reset</button> -->

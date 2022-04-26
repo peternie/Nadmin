@@ -6,22 +6,26 @@
  * @LastEditors: 聂一方
  * @LastEditTime: 2022-04-23 23:44:51
 -->
-<script setup lang="ts">
-   
-</script>
+
 
 <template>
-<h1>12312</h1>
-  <router-view></router-view>
+  <n-config-provider :theme ='store.theme'>
+      <layout class="layout"></layout>
+  </n-config-provider>
+  
 </template>
+<script setup lang="ts">
+    import layout from '@/views/Layout/index.vue'
+    
+    import {themeStore} from '@/store/module/theme'
+import { darkTheme } from 'naive-ui';
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    let store = themeStore()
+   
+</script>
+<style scoped>
+   .layout{
+     min-height: 100vh;
+     
+   }
 </style>

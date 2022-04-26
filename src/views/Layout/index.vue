@@ -22,6 +22,8 @@ import {ref} from 'vue'
 
 import nMenu from './component/nMneu/normal.vue'
 import miniMenu from './component/nMneu/mini.vue'
+import {login } from '@/request/index'
+login({name:'123',password:'456'})
 let isCollapsed = ref(false) // 控制是否折叠
 </script>
 <style scoped>

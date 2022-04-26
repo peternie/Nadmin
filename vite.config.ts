@@ -9,7 +9,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
-
+import { viteMockServe } from 'vite-plugin-mock';
 const pathResolve = (dir: string): any => {
   return resolve(__dirname, ".", dir)
 }
@@ -21,7 +21,12 @@ const alias: Record<string, string> = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(),viteMockServe({
+    mockPath:'./mock',
+    supportTs:false,
+    watchFiles:true,
+    logger:true,
+  })],
   base: './',
   resolve: {
     alias

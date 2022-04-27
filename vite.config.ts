@@ -29,7 +29,8 @@ export default defineConfig({
   })],
   base: './',
   resolve: {
-    alias
+    alias,
+    extensions:['.ts']
   },
   server: {
     port: 3004,

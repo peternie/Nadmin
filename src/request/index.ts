@@ -4,17 +4,4 @@ import axios from 'axios'
 const request = axios.create({
   baseURL:'/mock',
 })
-interface UserInfo {
-  userName :string
-  password :string
-}
-let login = (data: UserInfo)=>{
-  return request({
-    method:'post',
-    url:'/getUser',
-    data
-  })
-}
-export {
-  login
-}
+export default request

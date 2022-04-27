@@ -1322,6 +1322,11 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
+vanta@^0.5.22:
+  version "0.5.22"
+  resolved "https://registry.yarnpkg.com/vanta/-/vanta-0.5.22.tgz#92290e4ebac0b7c0d4822a4316d03ccd6bf33779"
+  integrity sha512-Y58U1SjHU6HeIuwq+te7eonyi7LWzKqyPDjZyQ7Kb6Zy4ampNJHRIUZvf1Pwl6uTC6Qi6P9fUYDsUVQDHq0KKg==
+
 vdirs@^0.1.4, vdirs@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/vdirs/-/vdirs-0.1.8.tgz#a103bc43baca738f8dea912a7e9737154a19dbc2"
@@ -1386,6 +1391,11 @@ vue-tsc@^0.34.7:
   integrity sha512-rWU4SjDqk9ylQN2hbnyP+rEu8W2a712DWUmciX6rDnId1m8sN/cuypTKjWjHHjaBLWNKULoEakRTOvrQ4ainhw==
   dependencies:
     "@volar/vue-typescript" "0.34.10"
+
+vue-vanta@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/vue-vanta/-/vue-vanta-0.0.1.tgz#cdfb474f0ba284093309a84bc7bc1261c0544739"
+  integrity sha512-OGnl3zkf2mMqmrJxG3DefWTweLHt/0J3M1+hTOLxgHlqWSf45FNKvCgUQFIPqoW++IBfw/5Wc3HRt1HxUBpFXQ==
 
 vue@^3.2.25:
   version "3.2.33"

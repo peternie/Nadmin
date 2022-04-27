@@ -10,7 +10,8 @@
 
 <template>
   <n-config-provider :theme ='store.theme'>
-      <layout class="layout"></layout>
+      <!-- <layout class="layout"></layout> -->
+      <router-view></router-view>
   </n-config-provider>
   
 </template>
@@ -23,9 +24,10 @@ import { darkTheme } from 'naive-ui';
     let store = themeStore()
    
 </script>
-<style scoped>
-   .layout{
-     min-height: 100vh;
-     
-   }
+<style >
+*{
+  padding: 0;
+  margin: 0;
+}
+ 
 </style>

@@ -14,10 +14,11 @@ interface userState {
   name: string
 }
 export const userStore = defineStore('main',{
-    state:():userState=>{
+    state:()=>{
       return {
          count:0,
-         name:""
+         name:"",
+         isCollapsed :false
       }
     },
     getters:{

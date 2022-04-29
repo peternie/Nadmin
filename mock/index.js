@@ -6,13 +6,16 @@ export default [
       return {
         code: 200,
         message: "ok",
-        data: ["tom", "jerry"]
+        data: {
+          name:'everyOne',
+          token:'token'
+        }
       };
     }
   },
   {
     url:'/mock/userRoute',
-    method:'post',
+    method:'get',
     response:()=>{
       return {
         code:200,

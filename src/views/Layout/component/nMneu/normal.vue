@@ -1,17 +1,26 @@
 <template>
-<div class='container'>
- <h1>12313</h1>
- <n-menu :options="state.menuOptions"  />
+<div>
+ <n-menu :options="transformAuthRoutesToSearchMenus(props.route)" 
+ :collapsed="collapsed"
+ :collapsed-width="64"
+  accordion @update:value='menuChange'/>
 </div>
 </template>
 <script setup lang='ts'>
-  import { reactive } from 'vue';
-import { userRoute } from '@/request/route/ api';
-  let state = reactive({menuOptions:[]})
-  userRoute({}).then(res=>{
-    console.log(res.data.data)
-     state.menuOptions = res.data.data
-  })
+import {transformAuthRoutesToSearchMenus} from '@/util/createRoute'
+  // import { reactive } from 'vue';
+  import { routerChange } from '@/common/route';
+  import {useRouter} from 'vue-router'
+  let props =  defineProps({
+     route :[],
+     collapsed :Boolean
+   })
+   const router = useRouter()
+   let menuChange = (val :any,v :any)=>{
+       routerChange(v.routePath,router)
+   }
+   
+// let collapsed = true
 </script>
 <style scoped>
 </style>

@@ -1,9 +1,9 @@
 import request from "../index";
 
-let userRoute = (data :any)=>{
+let userRoute = ()=>{
   return request({
-    method:'post',
-    data,
+    method:'get',
+    // data,
     url:'userRoute'
   })
 }
